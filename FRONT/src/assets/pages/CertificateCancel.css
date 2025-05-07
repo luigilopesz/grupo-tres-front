@@ -1,0 +1,46 @@
+.cancel-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff4f4;
+    border: 1px solid #ffbbbb;
+    border-radius: 8px;
+  }
+  
+  .cancel-container h2 {
+    text-align: center;
+    color: #b30000;
+    margin-bottom: 20px;
+  }
+  
+  .cancel-container input,
+  .cancel-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .cancel-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff3333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cancel-container button:hover {
+    background-color: #cc0000;
+  }
+  
+  .mensagem {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  

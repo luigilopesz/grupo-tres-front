@@ -1,0 +1,39 @@
+.list-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .list-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .certificado-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .certificado-lista li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+  }
+  
+  .certificado-lista li:last-child {
+    border-bottom: none;
+  }
+  
+  .certificado-lista p {
+    margin: 5px 0;
+  }
+  
+  .erro {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  
