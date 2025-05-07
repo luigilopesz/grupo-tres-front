@@ -42,5 +42,12 @@
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
+    color: black;
   }
   
+  .form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }  

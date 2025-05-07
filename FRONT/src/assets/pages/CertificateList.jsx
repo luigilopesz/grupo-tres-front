@@ -9,7 +9,7 @@ const CertificateList = () => {
   useEffect(() => {
     const fetchCertificados = async () => {
       try {
-        const response = await axios.get('http://localhost:3003/certificados');
+        const response = await axios.get('http://localhost:8080/certificados/ativos');
         setCertificados(response.data);
       } catch (err) {
         console.error(err);

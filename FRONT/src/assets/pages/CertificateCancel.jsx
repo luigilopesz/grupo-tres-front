@@ -11,7 +11,7 @@ const CertificateCancel = () => {
     e.preventDefault();
 
     try {
-      await axios.post(`http://localhost:3003/certificados/${certificadoId}/cancelar`, {
+      await axios.post(`http://localhost:8080/certificados/${certificadoId}/cancelar`, {
         motivo,
         dataCancelamento: new Date().toISOString()
       });

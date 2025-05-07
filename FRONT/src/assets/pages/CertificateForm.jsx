@@ -11,7 +11,7 @@ const CertificateForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3003/certificados', {
+      const response = await axios.post('http://localhost:8080/certificados', {
         email,
         cursoId
       });
@@ -26,26 +26,28 @@ const CertificateForm = () => {
   };
 
   return (
-    <div className="form-container">
-      <h2>Emitir Certificado</h2>
-      <form onSubmit={emitirCertificado}>
-        <input
-          type="email"
-          placeholder="Email do Aluno"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="text"
-          placeholder="ID do Curso"
-          value={cursoId}
-          onChange={(e) => setCursoId(e.target.value)}
-          required
-        />
-        <button type="submit">Emitir</button>
-      </form>
-      {mensagem && <p className="mensagem">{mensagem}</p>}
+    <div className="form-page">
+      <div className="form-container">
+        <h2>Emitir Certificado</h2>
+        <form onSubmit={emitirCertificado}>
+          <input
+            type="email"
+            placeholder="Email do Aluno"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            placeholder="ID do Curso"
+            value={cursoId}
+            onChange={(e) => setCursoId(e.target.value)}
+            required
+          />
+          <button type="submit">Emitir</button>
+        </form>
+        {mensagem && <p className="mensagem">{mensagem}</p>}
+      </div>
     </div>
   );
 };

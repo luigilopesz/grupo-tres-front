@@ -1,12 +1,15 @@
 .navbar {
-    background-color: #24292e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    flex-wrap: wrap;
-  }
+  background-color: #24292e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
   
   .logo {
     font-size: 1.4em;
